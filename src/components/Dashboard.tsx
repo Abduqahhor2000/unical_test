@@ -1,27 +1,36 @@
 import React, { useState } from "react";
+import Button from '@mui/material/Button';
 // import { useAppSelector, useAppDispatch } from "../store/hooks";
 // import { addTableData, clearTableData } from "../store/features/tableData";
-import { useGetTableQuery } from "../store/features/apiSlice";
+// import {
+//   useAddTableItemMutation,
+//   useGetTableQuery,
+// } from "../store/features/apiSlice";
 
 export default function Dashboard() {
   // const tableInfo = useAppSelector((state) => state.tableData.value);
   // const dispatch = useAppDispatch();
-  const {data: tableData, isLoading, isError, error} = useGetTableQuery()
+  // const [tableItem, setTableItem] = useState<string>("");
+  // const { data: tableData, isLoading, isError } = useGetTableQuery();
+  // const [addTableItem] = useAddTableItemMutation();
 
-  if(isLoading){
-    return <div>Loading...</div>
-  }
-
-  if(isError){
-    return <div>Error</div>
-  }
+  // function addHandler() {
+  //   addTableItem({
+  //     id: new Date().getTime(),
+  //     date: new Date(),
+  //     amount: "45$",
+  //     full_name: "Abduqahhor Norimmatov",
+  //     type: false,
+  //     comment: tableItem,
+  //     transfer_type: 2,
+  //   });
+  //   setTableItem("");
+  // }
 
   return (
     <>
-    {/* {console.log(data)} */}
-      {tableData?.map((item) => {
-        return <div>{item.full_name}</div>;
-      })}
+      <div>Dashboard</div>
+      <Button variant="contained">Salomlar</Button>
     </>
   );
 }

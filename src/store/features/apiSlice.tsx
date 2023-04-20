@@ -13,11 +13,21 @@ export interface TransferInfo {
 export const tableDataApi = createApi({
   reducerPath: 'tableDataApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3500' }),
+  tagTypes: ["TableData"],
   endpoints: (builder) => ({
     getTable: builder.query<TransferInfo[], void>({
-      query: () => `/table_data`,
+      query: () => `/table`,
+      providesTags: ["TableData"]
     }),
-  }),
+    addTableItem: builder.mutation<TransferInfo[], TransferInfo>({
+      query: (item) => ({
+        url: `/table`,
+        method: 'POST',
+        body: item
+      }),
+      invalidatesTags: ["TableData"]
+    }),
+  }), 
 });
 
-export const { useGetTableQuery } = tableDataApi;
+export const { useGetTableQuery, useAddTableItemMutation } = tableDataApi;
