@@ -13,9 +13,8 @@ function App() {
           <Route path="/" element={<Menu />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/table" element={<InputAndOutput />} />
+            <Route path="/table_list" element={<InputAndOutput />} />
           </Route>
-          <Route path="*" element={<>Sen juda qattiq adashding!</>} />
         </Routes>
       </BrowserRouter>
     </>

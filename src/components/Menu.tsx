@@ -23,7 +23,7 @@ function Menu() {
             </ListItemIcon>
             <ListItemText sx={{color: "white", padding: 0}} primary="Dashboard" />
           </ListItem>
-          <ListItem button component={Link} to="/table">
+          <ListItem button component={Link} to="/table_list">
             <ListItemIcon>
               <TocIcon sx={{"color": "white"}} />
             </ListItemIcon>
