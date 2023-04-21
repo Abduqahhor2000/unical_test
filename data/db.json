@@ -901,39 +901,48 @@
       "transfer_type": 4
     },
     {
-      "id": 1000,
-      "date": "2023-04-20T17:12:31.222Z",
-      "amount": "45$",
-      "full_name": "Abduqahhor Norimmatov",
+      "id": 1682093371500,
+      "date": "2023-04-21T16:09:31.500Z",
+      "amount": "€23",
+      "full_name": "Fedora Balaisot",
       "type": false,
-      "comment": "salom",
-      "transfer_type": 2
+      "comment": "bilimman",
+      "transfer_type": 1
     },
     {
-      "id": 1050,
-      "date": "2023-04-20T17:17:53.182Z",
-      "amount": "45$",
-      "full_name": "Abduqahhor Norimmatov",
-      "type": false,
-      "comment": "sfdsdfsd",
-      "transfer_type": 2
+      "id": 1682093387945,
+      "date": "2023-04-21T16:09:47.945Z",
+      "amount": "€55",
+      "full_name": "Fedora Balaisot",
+      "type": true,
+      "comment": "vaa",
+      "transfer_type": 4
     },
     {
-      "id": 1682011139677,
-      "date": "2023-04-20T17:18:59.677Z",
-      "amount": "45$",
-      "full_name": "Abduqahhor Norimmatov",
+      "id": 1682093620756,
+      "date": "2023-04-21T16:13:40.756Z",
+      "amount": "€11",
+      "full_name": "Fedora Balaisot",
       "type": false,
-      "comment": "hgfjdsfhsdf",
-      "transfer_type": 2
+      "comment": "marri",
+      "transfer_type": 1
     },
     {
-      "id": 1682011145002,
-      "date": "2023-04-20T17:19:05.002Z",
-      "amount": "45$",
-      "full_name": "Abduqahhor Norimmatov",
+      "id": 1682093876541,
+      "date": "2023-04-21T16:17:56.541Z",
+      "amount": "€23",
+      "full_name": "Fedora Balaisot",
       "type": false,
-      "comment": "dlksfhdsihflskdfs",
+      "comment": "efsdfsdf",
+      "transfer_type": 3
+    },
+    {
+      "id": 1682093891898,
+      "date": "2023-04-21T16:18:11.898Z",
+      "amount": "€34",
+      "full_name": "Fedora Balaisot",
+      "type": false,
+      "comment": "dfdfggdfg",
       "transfer_type": 2
     }
   ]
