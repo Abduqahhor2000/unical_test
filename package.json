@@ -31,9 +31,8 @@
     "yup": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.tsx",
     "build": "react-scripts build",
-    "json-server": "json-server --watch data/db.json --port 3500",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
