@@ -899,6 +899,24 @@
       "type": false,
       "comment": "Xodimga oylik berildi",
       "transfer_type": 4
+    },
+    {
+      "id": 1682104898295,
+      "date": "2023-04-21T19:21:38.295Z",
+      "amount": "€12",
+      "full_name": "Fedora Balaisot",
+      "type": false,
+      "comment": "shunchaki",
+      "transfer_type": 1
+    },
+    {
+      "id": 1682109477387,
+      "date": "2023-04-21T20:37:57.387Z",
+      "amount": "€80",
+      "full_name": "Fedora Balaisot",
+      "type": true,
+      "comment": "342ewrwer",
+      "transfer_type": 2
     }
   ],
   "location": [
