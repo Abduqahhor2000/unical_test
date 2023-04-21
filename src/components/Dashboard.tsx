@@ -1,13 +1,14 @@
-import React, { useState } from "react";
-import Button from '@mui/material/Button';
+import React from "react";
+import YandexMap from "./YandexMap";
+import StatInfo from "./StatInfo";
 
-export default function Dashboard() {
-  
-
+const Dashboard: React.FC = () => {
   return (
     <>
-      <div>Dashboard</div>
-      <Button variant="contained">Salomlar</Button>
+      <StatInfo/>
+      <YandexMap />
     </>
   );
-}
+};
+
+export default Dashboard;

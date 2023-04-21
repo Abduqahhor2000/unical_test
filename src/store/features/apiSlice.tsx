@@ -9,6 +9,11 @@ export interface TransferInfo {
     comment: String,
     transfer_type: Number
   }
+export interface Location {
+    id: Number,
+    lat: Number,
+    long: Number,
+  }
 
 export const tableDataApi = createApi({
   reducerPath: 'tableDataApi',
@@ -27,7 +32,11 @@ export const tableDataApi = createApi({
       }),
       invalidatesTags: ["TableData"]
     }),
+    getLocation: builder.query<Location[], void>({
+      query: () => `/location`,
+      providesTags: ["TableData"]
+    }),
   }), 
 });
 
-export const { useGetTableQuery, useAddTableItemMutation } = tableDataApi;
+export const { useGetTableQuery, useAddTableItemMutation, useGetLocationQuery } = tableDataApi;
