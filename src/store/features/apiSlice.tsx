@@ -17,7 +17,7 @@ export interface Location {
 
 export const tableDataApi = createApi({
   reducerPath: 'tableDataApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://unical-test.vercel.app:3500' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://unical-test.vercel.app' }),
   tagTypes: ["TableData"],
   endpoints: (builder) => ({
     getTable: builder.query<TransferInfo[], void>({
