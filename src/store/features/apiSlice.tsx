@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export interface TransferInfo {
     id: Number,
     date: Date,
-    amount: String,
+    amount: Number,
     full_name: String,
     type: Boolean,
     comment: String,
@@ -36,7 +36,11 @@ export const tableDataApi = createApi({
       query: () => `/location`,
       providesTags: ["TableData"]
     }),
+    getStat: builder.query<TransferInfo[], void>({
+      query: () => `/table`,
+      providesTags: ["TableData"]
+    }),
   }), 
 });
 
-export const { useGetTableQuery, useAddTableItemMutation, useGetLocationQuery } = tableDataApi;
+export const { useGetTableQuery, useAddTableItemMutation, useGetLocationQuery, useGetStatQuery } = tableDataApi;

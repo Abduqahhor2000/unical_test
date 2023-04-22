@@ -42,7 +42,7 @@ const AddItem = ({type_info, setIsOpen}:{type_info: Boolean, setIsOpen: Function
     addTableItem({
       id: new Date().getTime(),
       date: new Date(),
-      amount: `€${values.amount}`,
+      amount: +values.amount,
       full_name: "Fedora Balaisot",
       type: type_info,
       comment: values.comment,

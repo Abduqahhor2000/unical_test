@@ -58,7 +58,7 @@ function TableList() {
                         <TableCell component="th" scope="row">
                           {new Date(item.date).getFullYear()}
                         </TableCell>
-                        <TableCell>{item.amount}</TableCell>
+                        <TableCell>{`$${item.amount}`}</TableCell>
                         <TableCell>{item.full_name}</TableCell>
                         <TableCell>{item.type ? "Kirim" : "Chiqim"}</TableCell>
                         <TableCell>{item.comment}</TableCell>
