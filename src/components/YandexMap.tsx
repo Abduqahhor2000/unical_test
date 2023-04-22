@@ -1,12 +1,14 @@
 import React from "react";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import { useGetLocationQuery } from "../store/features/apiSlice";
+import { Box } from "@mui/material";
 
 function YandexMap() {
   const { data: locations, isLoading, isError } = useGetLocationQuery();
 
   return (
     <>
+    <Box sx={{px:3}}>
       <YMaps>
         <Map
           defaultState={{
@@ -15,7 +17,7 @@ function YandexMap() {
             controls: ["zoomControl", "fullscreenControl"],
           }}
           width={"100%"}
-          height={350}
+          height={400}
           modules={["control.ZoomControl", "control.FullscreenControl"]}
         >
           {locations
@@ -34,6 +36,8 @@ function YandexMap() {
             : null}
         </Map>
       </YMaps>
+    </Box>
+      
     </>
   );
 }
