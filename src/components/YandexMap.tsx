@@ -24,6 +24,10 @@ function YandexMap() {
                   <Placemark
                     key={item.id.toString()}
                     defaultGeometry={[item.lat, item.long]}
+                    options={{
+                      iconLayout: "default#image",
+                      iconImageHref: "/taxi_icon.png",
+                    }}
                   />
                 );
               })
