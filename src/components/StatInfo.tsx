@@ -69,7 +69,7 @@ function StatInfo() {
               p: 3,
             }}
           >
-            <Typography variant="h5" component="h2" sx={{ mb: 2 }}>
+            <Typography variant="h4" component="h2" sx={{ mb: 2 }}>
               {selectedButton.toUpperCase()} BO'YICHA NATIJA
             </Typography>
             <Typography variant="h6" component="h3">

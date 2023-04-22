@@ -71,6 +71,7 @@ const AddItem = ({type_info, setIsOpen}:{type_info: Boolean, setIsOpen: Function
           <TextField
             sx={{ width: "100%" }}
             label="Miqdor"
+            
             type="number"
             name="amount"
             onChange={handleChange}
